@@ -1,0 +1,79 @@
+html,body {
+  font-family: arial;
+  font-size: 1.1em;
+}
+
+.container {
+  margin: auto;
+  width: 800px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.Link {
+  color: #595959;
+  text-decoration: underline;
+}
+
+.head {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5em;
+}
+
+input,textarea {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:focus, a:hover {
+   color: white;
+   background-color: #595959;
+   text-decoration: none
+ }
+
+.banner {
+  background-image: url(pics/blankbackground.png);
+  background-position: center top;
+  background-size: auto;
+  padding: 40px 0;
+	margin: 15px;
+  text-emphasis-color: #FFFFFF;
+  text-align: center;
+}
+
+.im{
+  width: 70px;
+  height: 45px;
+  border: 1px solid;
+  border-color: #FFFFFF;
+}
+
+.im:focus {
+  border: 1px solid;
+  width: 71px;
+  height: 46px;
+  border-color: #595959;
+}
+
+.im:hover {
+  border: 1px solid;
+  border-color: #595959;
+}
+
+.error {
+  color: red;
+}
+
+#accessibilitybanner {
+  width: 857px;
+  height: 207px;
+  background-image: url(pics/accessibilityoverviewbanner.png);
+}

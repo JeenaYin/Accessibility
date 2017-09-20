@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "Voicify: Speaks Your Highlight™",
+  "description": "This extension allows the user to listen to whatever they highlight.",
+  "version": "0.0.1",
+  "minimum_chrome_version": "24.0.1307.0",
+  "homepage_url": "http://www.accessibilitycourse.com",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+
+  "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.accessibilitycourse.com/*",
+        "http://www.cmu.edu/"
+      ],
+      "js": [
+          "scripts/jquery.min.js",
+          "scripts/reader.js"
+      ],
+      "css": ["css/reader.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
